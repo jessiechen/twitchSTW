@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/overallLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/unlock_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4ECDC4"
+        android:orientation="vertical" >
+
+        <com.twitch.homescreenlock.CustomDigitalClock
+            android:id="@+id/digitalClock1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:text="DigitalClock"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/unlock_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4ECDC4"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#556270"
+            android:padding="5sp"
+            android:text="Android"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/stwProgress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#AAFFFFFF"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="54"
+                android:background="#AA556270"
+                android:gravity="right"
+                android:padding="2sp"
+                android:paddingRight="5sp"
+                android:text="54%"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.twitch.homescreenlock.HomeFeatureLayout
+        android:id="@+id/STWnew_contentScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/STWnew_contentWrap"
+            android:layout_width="960dp"
+            android:layout_height="fill_parent"
+            android:weightSum="90" 
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/STWnew_feedbackRight"
+                android:layout_width="320dp"
+                android:layout_weight="30"
+                android:layout_height="fill_parent"
+                android:background="#CCF572" 
+                 >
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/STWnew_content"
+                android:layout_width="320dp"
+                android:layout_weight="30"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:id="@+id/markRight"
+                        android:layout_width="60dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="50"
+                        android:background="#CCF572" >
+
+                        <ImageButton
+                            android:id="@+id/iconRight"
+                            android:layout_width="30dp"
+                            android:layout_height="23dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/right"
+                            android:gravity="center" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/markWrong"
+                        android:layout_width="60dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="50"
+                        android:background="#FF6B6B" >
+
+                        <ImageButton
+                            android:id="@+id/iconWrong"
+                            android:layout_width="26dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/wrong"
+                            android:gravity="center" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#E8FFFFFF"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/STWnew_extraction"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10sp"
+                        android:background="#10000000"
+                        android:gravity="left"
+                        android:padding="10sp"
+                        android:text="Stanford University was founded in 1885"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10sp"
+                        android:layout_marginBottom="5sp"
+                        android:text="@string/extractFrom"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#556270"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/STWnew_sentence"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:text="Stanford University was founded in 1885 by Leland Stanford as a memorial to their son"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#333333"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/STWnew_feedbackWrong"
+                android:layout_width="320dp"
+                android:layout_weight="30"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:background="#FF6B6B" >
+            </RelativeLayout>
+            
+        </LinearLayout>
+    </com.twitch.homescreenlock.HomeFeatureLayout>
+
+</LinearLayout>

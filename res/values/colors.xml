@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="turquoise">#4ECDC4</color>
+    <color name="lightGreen">#CCF572</color>
+    <color name="lightRed">#FF6B6B</color>
+    <color name="darkRed">#C44D58</color>
+    <color name="prussianBlue">#556270</color>
+    <color name="black">#333333</color>
+    <color name="white">#ffffff</color>
+    
+</resources>

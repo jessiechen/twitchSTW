@@ -1,0 +1,60 @@
+# view res/layout/activity_home_screen_lock.xml #generated:8
+# view res/layout/activity_structuring_the_web_new.xml #generated:15
+# view res/layout/census_statistics.xml #generated:7
+# view res/layout/slide_to_unlock.xml #generated:7
+# view res/layout/structuring_the_web.xml #generated:14
+# view res/layout/twitch_census_activity.xml #generated:7
+# view res/layout/twitch_census_dress.xml #generated:7
+# view res/layout/twitch_census_energy.xml #generated:7
+# view res/layout/twitch_census_flow.xml #generated:8
+# view res/layout/twitch_census_people.xml #generated:7
+-keep class com.twitch.homescreenlock.CustomDigitalClock { <init>(...); }
+
+# view res/layout/activity_structuring_the_web_new.xml #generated:63
+-keep class com.twitch.homescreenlock.HomeFeatureLayout { <init>(...); }
+
+# view AndroidManifest.xml #generated:27
+-keep class com.twitch.homescreenlock.HomeScreenLock { <init>(...); }
+
+# view AndroidManifest.xml #generated:33
+-keep class com.twitch.homescreenlock.HomeScreenLockActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:58
+-keep class com.twitch.homescreenlock.HomeScreenLockMain { <init>(...); }
+
+# view AndroidManifest.xml #generated:51
+-keep class com.twitch.homescreenlock.LockScreenBroadcast { <init>(...); }
+
+# view AndroidManifest.xml #generated:48
+-keep class com.twitch.homescreenlock.LockScreenService { <init>(...); }
+
+# view AndroidManifest.xml #generated:94
+-keep class com.twitch.homescreenlock.LockScreenSettings { <init>(...); }
+
+# view AndroidManifest.xml #generated:100
+-keep class com.twitch.homescreenlock.SlideToUnlock { <init>(...); }
+
+# view AndroidManifest.xml #generated:106
+-keep class com.twitch.homescreenlock.StructuringTheWeb { <init>(...); }
+
+# view AndroidManifest.xml #generated:118
+-keep class com.twitch.homescreenlock.StructuringTheWebNew { <init>(...); }
+
+# view AndroidManifest.xml #generated:82
+-keep class com.twitch.homescreenlock.TwitchCensusActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:70
+-keep class com.twitch.homescreenlock.TwitchCensusDress { <init>(...); }
+
+# view AndroidManifest.xml #generated:76
+-keep class com.twitch.homescreenlock.TwitchCensusEnergy { <init>(...); }
+
+# view AndroidManifest.xml #generated:88
+-keep class com.twitch.homescreenlock.TwitchCensusFlow { <init>(...); }
+
+# view AndroidManifest.xml #generated:64
+-keep class com.twitch.homescreenlock.TwitchCensusPeople { <init>(...); }
+
+# view AndroidManifest.xml #generated:112
+-keep class com.twitch.homescreenlock.TwitchCognitiveLoad { <init>(...); }
+
